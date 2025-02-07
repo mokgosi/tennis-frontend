@@ -1,5 +1,40 @@
-# Vue 3 + TypeScript + Vite
+##Tennis Scoreboard
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## Tools used:
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+- PHP 8.3.11
+
+- VueJS ^3.5.13
+- TypeScript ~5.6.2
+- NPM 11.1.0 
+- vite ^6.0.5",
+
+## Setup & Configuration 
+
+unzip the file into a location alread setup to run php 8 aleast
+
+### Backend
+
+Then run composer install some dependencies from root of the app.
+
+```	
+$ composer install
+$ composer dump-autolad -o
+```
+
+Launch the backend server
+
+```
+$ php -S localhost:8000
+```
+
+### Frontend
+
+```
+$ cd frontend
+$ npm install
+$
+$ npm run dev    //to run server
+```
+
+Then Launch the front-end app here http://localhost:5173/ or whatever is suggested by your terminal

@@ -3,8 +3,10 @@
 
   <div class="card">
     <div class="message">
-      
-      <p>{{ empire }}</p>
+      <a href="" target="_blank">
+        <img src="../assets/download.jpg" class="empire" alt="Empire logo" />
+      </a>
+      <h3>{{ empire }}</h3>
     </div>
 
     <button type="button" @click="submitPlayerScore('player1score')">Player1 - {{ player1score }}</button>
@@ -49,7 +51,7 @@
     //display the empire results
     empire.value = response.data.message;
 
-    //reset scores and localStorage round Completed
+    //reset scores and localStorage if round Completed
     if(response.data.complete) {
       player1score.value = 0,
       player2score.value = 0,
@@ -78,6 +80,18 @@
   }
 
 </script>
+
+<style scoped>
+
+
+.empire {
+  height: 4em;
+  width: 4em;
+  padding: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+</style>
 
 
 
