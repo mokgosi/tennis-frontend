@@ -3,9 +3,7 @@
 
   <div class="card">
     <div class="message">
-      <a href="" target="_blank">
         <img src="../assets/download.jpg" class="empire" alt="Empire logo" />
-      </a>
       <h3>{{ empire }}</h3>
     </div>
 
